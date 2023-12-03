@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ $scss := resources.Get "scss/app.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $scss.RelPermalink }}">
-    <title>{{ .Title }}</title>
+    <title>
+        {{ with .Title }}
+            {{- . -}} 
+        {{ else }}
+            {{- .Site.Title -}}
+        {{ end }}
+    </title>
 </head>
-<body>
+<body id="{{ index .Params "id" }}">
     {{ block "header" . }}
         {{ partial "header.html" .}}
     {{end}}
@@ -22,5 +28,8 @@
 
     {{ $js := resources.Get "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" | minify | fingerprint }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+    {{ $js := resources.Get "/js/main.js" | js.Build "main.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink  }}"></script>
 </body>
 </html>
