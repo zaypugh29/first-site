@@ -6,7 +6,17 @@
     <title>{{ .Title }}</title>
 </head>
 <body>
-    {{ block "main" . }}
-    {{ end }}
+    {{ block "header" . }}
+        {{ partial "header.html" .}}
+    {{end}}
+        
+    <div class=" ">
+        {{ block "main" . }}{{ end }}
+    </div>
+
+    {{ block "footer" . }}
+        {{ partial "footer.html" .}}
+    {{end}}
+
 </body>
 </html>
