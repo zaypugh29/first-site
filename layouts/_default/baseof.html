@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ $scss := resources.Get "scss/app.scss" | toCSS | minify | fingerprint }}
+    {{ $scss := resources.Get "/scss/app.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $scss.RelPermalink }}">
     <title>
         {{ with .Title }}
@@ -26,7 +26,7 @@
         {{ partial "footer.html" .}}
     {{end}}
 
-    {{ $js := resources.Get "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" | js.Build "bootstrap.js" | minify | fingerprint }}
+    {{ $js := resources.Get "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" | js.Build "bootstrap.js" | minify | fingerprint }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
     {{ $js := resources.Get "/js/main.js" | js.Build "main.js" | minify | fingerprint }}
