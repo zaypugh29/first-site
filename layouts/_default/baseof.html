@@ -12,7 +12,7 @@
         {{ partial "header.html" .}}
     {{end}}
         
-    <div class=" ">
+    <div class=" container-fluid flex-grow-1">
         {{ block "main" . }}{{ end }}
     </div>
 
@@ -20,5 +20,7 @@
         {{ partial "footer.html" .}}
     {{end}}
 
+    {{ $js := resources.Get "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 </body>
 </html>
