@@ -26,7 +26,7 @@
         {{ partial "footer.html" .}}
     {{end}}
 
-    {{ $js := resources.Get "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"  }}
+    {{ $js := resources.Get "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"| js.Build "bootstrap.js" | fingerprint}}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
     {{ $js := resources.Get "js/main.js" | js.Build "main.js" | fingerprint }}
