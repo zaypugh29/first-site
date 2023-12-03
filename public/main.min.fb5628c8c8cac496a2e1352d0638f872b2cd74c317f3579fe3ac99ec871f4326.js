@@ -1,0 +1,1 @@
+"use strict";(()=>{var e=Object.getOwnPropertyNames,t=(t,n)=>function(){return n||(0,t[e(t)[0]])((n={exports:{}}).exports,n),n.exports},n=t({"<stdin>"(e){Object.defineProperty(e,"__esModule",{value:!0}),e.main=void 0;function t(){console.log("Hello World!")}e.main=t,t()}});n()})()
