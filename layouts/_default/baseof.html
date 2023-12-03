@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ $scss := resources.GetMatch "scss/app.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $scss.Permalink }}">
+    <link rel="stylesheet" href="{{ $scss.RelPermalink }}">
     <title>
         {{ with .Title }}
             {{- . -}} 
@@ -27,9 +27,9 @@
     {{end}}
 
     {{ $js := resources.Get "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"}}
-    <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
     {{ $js := resources.Get "/js/main.js" | js.Build "main.js"}}
-    <script src="{{ $js.Permalink  }}"></script>
+    <script src="{{ $js.RelPermalink  }}"></script>
 </body>
 </html>

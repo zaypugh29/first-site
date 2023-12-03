@@ -1,3 +1,3 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://example.org/public'
 languageCode = 'en-us'
 title = 'My First Website!'
