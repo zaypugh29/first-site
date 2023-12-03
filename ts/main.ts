@@ -1,4 +1,4 @@
 export function main () {
-    console.log(document.body.id);
+    console.log("Hello World!");
 }
 main();
