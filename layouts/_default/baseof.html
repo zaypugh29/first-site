@@ -13,7 +13,7 @@
         {{ end }}
     </title>
 </head>
-<body id="{{ index .Params "id" }}">
+<body id="{{ with .Params.id }} {{- . -}} {{ else }} 21 {{ end }}">
     {{ block "header" . }}
         {{ partial "header.html" .}}
     {{end}}
