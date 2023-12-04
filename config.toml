@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://zaypugh29.github.io/first-site/'
 languageCode = 'en-us'
 title = 'My First Website!'
 [deployment]

@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://zaypugh29.github.io/first-site/categories/</loc>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://zaypugh29.github.io/first-site/</loc>
   </url><url>
-    <loc>http://example.org/packages/</loc>
+    <loc>https://zaypugh29.github.io/first-site/packages/</loc>
   </url><url>
-    <loc>http://example.org/page1/</loc>
+    <loc>https://zaypugh29.github.io/first-site/page1/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://zaypugh29.github.io/first-site/tags/</loc>
   </url>
 </urlset>

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div><a href="/index">Home</a></div>
-    <div><a href="/page1">Page 1</a></div>
-    <div><a href="/packages">Packages</a></div>
+    <div><a href="{{ .Site.BaseURL }}">Home</a></div>
+    <div><a href="{{ relref . `page1` }}">Page 1</a></div>
+    <div><a href="{{ relref . `packages` }}">Packages</a></div>
 </div>
