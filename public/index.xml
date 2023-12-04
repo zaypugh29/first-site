@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My First Website!</title>
-    <link>http://example.org/public/</link>
+    <link>https://storage.googleapis.com/ipug29-my-first-bucket/public/</link>
     <description>Recent content on My First Website!</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/public/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://storage.googleapis.com/ipug29-my-first-bucket/public/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Packages</title>
-      <link>http://example.org/public/packages/</link>
+      <link>https://storage.googleapis.com/ipug29-my-first-bucket/public/packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/public/packages/</guid>
+      <guid>https://storage.googleapis.com/ipug29-my-first-bucket/public/packages/</guid>
       <description>hi</description>
     </item>
     
     <item>
       <title>Page 1</title>
-      <link>http://example.org/public/page1/</link>
+      <link>https://storage.googleapis.com/ipug29-my-first-bucket/public/page1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/public/page1/</guid>
+      <guid>https://storage.googleapis.com/ipug29-my-first-bucket/public/page1/</guid>
       <description>ko</description>
     </item>
     

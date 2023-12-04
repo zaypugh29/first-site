@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/public/categories/</loc>
+    <loc>https://storage.googleapis.com/ipug29-my-first-bucket/public/categories/</loc>
   </url><url>
-    <loc>http://example.org/public/</loc>
+    <loc>https://storage.googleapis.com/ipug29-my-first-bucket/public/</loc>
   </url><url>
-    <loc>http://example.org/public/packages/</loc>
+    <loc>https://storage.googleapis.com/ipug29-my-first-bucket/public/packages/</loc>
   </url><url>
-    <loc>http://example.org/public/page1/</loc>
+    <loc>https://storage.googleapis.com/ipug29-my-first-bucket/public/page1/</loc>
   </url><url>
-    <loc>http://example.org/public/tags/</loc>
+    <loc>https://storage.googleapis.com/ipug29-my-first-bucket/public/tags/</loc>
   </url>
 </urlset>
