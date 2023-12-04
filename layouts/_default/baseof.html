@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ $scss := resources.GetMatch "scss/app.scss" | toCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $scss.RelPermalink }}">
+    {{ with $scss }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ end }}
+
     <title>
         {{ with .Title }}
             {{- . -}} 
