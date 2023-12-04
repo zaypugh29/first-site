@@ -1,3 +1,11 @@
 baseURL = 'http://example.org/public'
 languageCode = 'en-us'
 title = 'My First Website!'
+[deployment]
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "production"
+
+# URL specifies the Go Cloud Development Kit URL to deploy to. Examples:
+URL = "gs://ipug29-my-first-bucket"
