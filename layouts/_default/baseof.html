@@ -17,7 +17,7 @@
     </title>
 </head>
 <body id="{{ with .Params.id }} {{- . -}} {{ else }} home {{ end }}">
-    RELREF {{ relref . "page1" }}
+    ok
     home {{ .Site.BaseURL }}
     {{ block "header" . }}
         {{ partial "header.html" .}}
