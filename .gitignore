@@ -1,6 +1,2 @@
-/assets/node_modules/@popperjs
-/assets/node_modules/bootstrap/js
-/assets/node_modules/bootstrap/dist/css
-/assets/node_modules/bootstrap/LICENSE
-/assets/node_modules/bootstrap/*.md
-/assets/node_modules/bootstrap/*.json
+node_modules/
+/assets/node_modules
