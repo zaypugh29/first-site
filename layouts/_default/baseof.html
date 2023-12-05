@@ -17,8 +17,6 @@
     </title>
 </head>
 <body id="{{ with .Params.id }} {{- . -}} {{ else }} home {{ end }}">
-    ok
-    home {{ .Site.BaseURL }}
     {{ block "header" . }}
         {{ partial "header.html" .}}
     {{end}}
